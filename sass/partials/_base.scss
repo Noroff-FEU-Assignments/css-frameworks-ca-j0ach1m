@@ -1,0 +1,21 @@
+body{
+  background: $form !important;
+  font-family: $font-primary !important;
+  color: $text !important;
+}
+
+h1{
+  font-family: $font-headings;
+  color: $pink;
+}
+
+@media (max-width: 414px) {
+body {
+  background-image: radial-gradient(circle at center, $light-grey, $white);
+
+}
+}
+.container{
+  max-width: 90%;
+  margin: 0 auto;
+}

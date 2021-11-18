@@ -1,0 +1,86 @@
+$breakpoints: (
+  "max-md": "767px",
+  "min-md": "768px",
+);
+
+.responsive-tabs {
+  padding: 1rem;
+
+  .nav-tabs {
+    display: none;
+  }
+  .nav-item {
+    margin-right: 30px;
+  }
+  img {
+    max-width: 230px;
+    height: auto;
+    margin: 30px 0 60px 30px;
+  }
+  .card-text {
+    padding: 15px;
+    margin-right: 10px;
+    color: $headings;
+    i {
+      margin-left: 10px;
+      color: $headings;
+      font-size: 1.5rem;
+    }
+  }
+  .nav-link {
+    color: $pink;
+  }
+
+  @media (min-width: map-get($breakpoints, "min-md")) {
+    .nav-tabs {
+      display: flex;
+    }
+
+    .card {
+      border: none;
+
+      .card-header {
+        display: none;
+      }
+
+      .collapse {
+        display: block;
+      }
+    }
+  }
+
+  @media (max-width: map-get($breakpoints, "max-md")) {
+    .tab-pane {
+      display: block;
+      opacity: 1;
+      background: $form;
+      align-items: center;
+
+      .card-header {
+        background: $white;
+      }
+      a {
+        color: $pink;
+        text-decoration: none;
+      }
+
+      img {
+        max-width: 90%;
+        justify-content: center;
+        margin: auto;
+        padding-top: 10px;
+      }
+      .share {
+        text-align: center;
+      }
+    }
+
+    .collapse.show {
+      border-top: 1px solid $pink;
+      background: radial-gradient(circle, $white, $form);
+    }
+    .card {
+      border: none;
+    }
+  }
+}
