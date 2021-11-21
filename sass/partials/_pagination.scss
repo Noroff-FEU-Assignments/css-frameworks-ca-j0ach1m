@@ -1,0 +1,25 @@
+.pagination{
+  margin: 40px 0;
+  .page-item.active {
+    .page-link {
+    border: 1px solid $pink;
+    background: $pink;
+    color: $white;
+  }
+  }
+  a{
+    border: 1px solid $pink;
+    color: $pink;
+  }
+.page-link{
+    padding: .75rem 1.25rem;
+}
+.page-item:last-child .page-link{
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+.page-item:first-child .page-link {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+}

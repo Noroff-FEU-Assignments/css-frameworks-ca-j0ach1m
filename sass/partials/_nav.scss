@@ -1,0 +1,58 @@
+nav.navbar {
+
+    background: $form;
+
+
+  .navbar-brand{
+    padding: 0 70px;
+    font-family: $font-headings;
+    font-style: italic;
+    font-weight: 100;
+    color: $pink !important;
+  }
+  .nav-link{
+    color: $headings ;
+    justify-content: space-between;
+
+  }
+  .nav-link.active{
+    background: #fff;
+  }
+
+  form{
+    padding: 0 70px;
+  }
+
+  .form-control{
+    border: none;
+    background-color: #fff;
+    border-radius: 5px 0px 0px 5px;
+  }
+  .me-2{
+    margin: 0 !important;
+  }
+
+  form button{
+    background-color: $pink;
+    color: $white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 0 5px 5px 0;
+  }
+  .form-control ::placeholder{
+    color: $text;
+  }
+}
+@media (max-width: 768px){
+  nav{
+    .nav-item a{
+padding-left: 70px !important;
+    }
+
+    .nav-link{
+font-weight: 600;
+
+    }
+
+  }
+}

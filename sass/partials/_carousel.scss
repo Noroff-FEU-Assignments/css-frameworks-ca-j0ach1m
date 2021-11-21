@@ -1,0 +1,23 @@
+.carousel-indicators {
+  button {
+    height: 30px !important;
+    width: 30px !important;
+    background-color: $white !important;
+    opacity: 1 !important;
+    margin: 12px !important;
+  }
+  .active {
+    background-color: $pink !important;
+  }
+
+
+}
+.carousel-item{
+  @media (max-width: 768px){
+    .d-block{
+      height: 280px;
+    object-fit: cover;
+
+    }
+  }
+}
