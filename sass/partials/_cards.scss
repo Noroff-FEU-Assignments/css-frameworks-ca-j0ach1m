@@ -1,0 +1,36 @@
+.card{
+  border-radius: 3%;
+  background: $white;
+
+  .card-title{
+    color: $headings;
+    padding-bottom: 10px;
+  }
+.btn{
+  position: relative;
+  border: none;
+  background: $pink;
+  color: $white;
+  padding: .8rem;
+  border-radius: 9px;
+  font-weight: 400;
+}
+.btn::after{
+  content: "..........---";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  background: $text ;
+  color: $text;
+  border-radius: 0 8px 8px 0;
+}
+img{
+  justify-content: center;
+  border-radius:  3% 3% 0 0;
+}
+}
+.card-body{
+  padding: 20px 40px;
+}

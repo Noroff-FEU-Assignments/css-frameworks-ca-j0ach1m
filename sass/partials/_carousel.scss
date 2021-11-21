@@ -9,4 +9,15 @@
   .active {
     background-color: $pink !important;
   }
+
+
+}
+.carousel-item{
+  @media (max-width: 768px){
+    .d-block{
+      height: 280px;
+    object-fit: cover;
+
+    }
+  }
 }
